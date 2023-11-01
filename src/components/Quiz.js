@@ -25,6 +25,7 @@ const {score , setScore , setGameState} = useContext(QuizContext);
         <div className='options'>
             <button onClick={()=>{setOptionChosen("A");}}>{Questions[currentQuestion].optionA}</button>
             <button onClick={()=>{setOptionChosen("B");}}>{Questions[currentQuestion].optionB}</button>
+            <br/>
             <button onClick={()=>{setOptionChosen("C");}}>{Questions[currentQuestion].optionC}</button>
             <button onClick={()=>{setOptionChosen("D");}}>{Questions[currentQuestion].optionD}</button>
         </div>

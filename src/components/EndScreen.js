@@ -6,7 +6,7 @@ import {Questions} from "../Helpers/QuestionBank"
 const EndScreen = () => {
     const {setGameState,score,setScore} = useContext(QuizContext);
   return (
-    <div>
+    <div className="Endscreen">
         <h1>Quiz Finished</h1>
         <h3>{score}/{Questions.length}</h3>
         <button onClick={()=>{

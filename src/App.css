@@ -1,9 +1,14 @@
+body{
+  background-image: url('../public/Ve9W.gif');
+  background-size: cover;
+}
 .App {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: white;
 }
 
 .Menu{
@@ -25,5 +30,83 @@
   border-radius: 5px;
   font-size: 20px;
   cursor: pointer;
-  
+  background-color: aquamarine;
+  border: none;
+  margin: 20px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.Menu button:hover{
+  background-color: rgb(20, 255, 177);
+  transition: ease-in;
+  transition-duration: 200ms;
+}
+
+.Quiz button{
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+  background-color: aquamarine;
+  border: none;
+  margin: 20px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.Quiz{
+  background-color: wheat;
+  border: none;
+  border-radius: 10px;
+}
+
+.Quiz button:hover{
+  background-color: rgb(20, 255, 177);
+  transition: ease-in;
+  transition-duration: 200ms;
+}
+
+.Quiz button:active{
+  background-color: rgb(20, 255, 177);
+}
+
+.Quiz h1{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: aliceblue;
+}
+
+.Endscreen{
+  background-color: wheat;
+  border: none;
+  border-radius: 10px;
+  width: 500px;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 40px;
+  gap: 30px;
+}
+
+.Endscreen button{
+  width: 300px;
+  height: 50px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: aquamarine;
+  border: none;
+  margin: 20px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.Endscreen button:hover{
+  background-color: rgb(20, 255, 177);
+  transition: ease-in;
+  transition-duration: 200ms;
 }

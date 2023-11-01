@@ -7,14 +7,13 @@ const {score , setScore , setGameState} = useContext(QuizContext);
     const[currentQuestion,setCurrentQuestion] = useState(0);
     const[optionChosen,setOptionChosen] = useState("");
     const nextQuestion = ()=>{
-        if(Questions[currentQuestion].answer == optionChosen){
+        if(Questions[currentQuestion].answer === optionChosen){
             setScore(score+1);
         }
-        alert(score)
         setCurrentQuestion(currentQuestion+1);
     };
     const finishQuiz = () => {
-        if(Questions[currentQuestion].answer == optionChosen){
+        if(Questions[currentQuestion].answer === optionChosen){
             setScore(score+1)
         }
         setGameState("endScreen");

@@ -3,7 +3,7 @@ import {QuizContext} from '../Helpers/Context';
 import "../App.css";
 
 const MainMenu = () => {
-    const {gameState,setGameState} = useContext(QuizContext)
+    const {setGameState} = useContext(QuizContext)
     return (
         <div className="Menu">
             <button onClick={()=>{
